@@ -4,7 +4,7 @@
   <Languages xmlns="">
     <Language code="ar-IQ" />
   </Languages>
-  <App xmlns="" ProductID="{791b6692-7a9e-435a-a3ee-2bf55b2a6cf2}" Title="HelloAmap" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="HelloAmap author" Description="Sample description" Publisher="HelloAmap" PublisherID="{f88a1933-ade2-4edb-98a3-99f3d841423f}">
+  <App xmlns="" ProductID="{9957599b-32bf-41d1-bdfb-7a05d5209786}" Title="HelloAmap" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="HelloAmap author" Description="Sample description" Publisher="HelloAmap" PublisherID="{f88a1933-ade2-4edb-98a3-99f3d841423f}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -25,11 +25,16 @@
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
           <Title>HelloAmap</Title>
-          <BackContent></BackContent>
-          <BackBackgroundImageURI></BackBackgroundImageURI>
-          <BackTitle></BackTitle>
-          <DeviceLockImageURI></DeviceLockImageURI>
-          <HasLarge></HasLarge>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI>
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <DeviceLockImageURI>
+          </DeviceLockImageURI>
+          <HasLarge>
+          </HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>

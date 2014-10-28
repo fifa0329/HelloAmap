@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{969b8a66-3949-4ddf-9d7a-8c3dd1083adf}" Title="Lesson2DislplayMap" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Lesson2DislplayMap author" Description="Sample description" Publisher="Lesson2DislplayMap" PublisherID="{371f5111-02f4-420f-80e6-fa6adf04b1d2}">
+  <App xmlns="" ProductID="{9957599b-32bf-41d1-bdfb-7a05d5209786}" Title="Lesson2DislplayMap" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Lesson2DislplayMap author" Description="Sample description" Publisher="Lesson2DislplayMap" PublisherID="{371f5111-02f4-420f-80e6-fa6adf04b1d2}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

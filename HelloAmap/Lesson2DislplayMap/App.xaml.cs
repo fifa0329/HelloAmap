@@ -40,7 +40,7 @@ namespace Lesson2DislplayMap
             if (Debugger.IsAttached)
             {
                 // Display the current frame rate counters.
-                Application.Current.Host.Settings.EnableFrameRateCounter = true;
+                Current.Host.Settings.EnableFrameRateCounter = true;
 
                 // Show the areas of the app that are being redrawn in each frame.
                 //Application.Current.Host.Settings.EnableRedrawRegions = true;
@@ -57,8 +57,10 @@ namespace Lesson2DislplayMap
             }
 
 
-            AMapConfig.Key = "e8d80506628fa48c706f9bc2dae74722";
-            AMapSearchConfig.Key = "e8d80506628fa48c706f9bc2dae74722";
+            string newKey = "890572ffc297cf2e0278bbdba3aa8bb7";
+
+            AMapConfig.Key = newKey;//地图显示key
+            AMapSearchConfig.Key = newKey;
 
         }
 

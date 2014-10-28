@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{9957599b-32bf-41d1-bdfb-7a05d5209786}" Title="Lesson3" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Lesson3 author" Description="Sample description" Publisher="Lesson3" PublisherID="{969b8a66-3949-4ddf-9d7a-8c3dd1083adf}">
+  <App xmlns="" ProductID="{9957599b-32bf-41d1-bdfb-7a05d5209786}" Title="ReGeoCodeMyPosition" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="ReGeoCodeMyPosition author" Description="Sample description" Publisher="ReGeoCodeMyPosition" PublisherID="{600ef05e-d709-4fbf-889a-5b7b5a875551}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -16,12 +16,12 @@
       <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
     </Tasks>
     <Tokens>
-      <PrimaryToken TokenID="Lesson3Token" TaskName="_default">
+      <PrimaryToken TokenID="ReGeoCodeMyPositionToken" TaskName="_default">
         <TemplateFlip>
           <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>Lesson3</Title>
+          <Title>ReGeoCodeMyPosition</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>

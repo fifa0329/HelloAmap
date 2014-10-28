@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Resources;
 using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Navigation;
@@ -7,9 +8,9 @@ using Com.AMap.Api.Maps;
 using Com.AMap.Api.Services;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using Lesson3.Resources;
+using ReGeoCodeMyPosition.Resources;
 
-namespace Lesson3
+namespace ReGeoCodeMyPosition
 {
     public partial class App : Application
     {

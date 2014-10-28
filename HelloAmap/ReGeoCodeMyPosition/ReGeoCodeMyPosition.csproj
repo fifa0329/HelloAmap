@@ -5,22 +5,23 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{791B6692-7A9E-435A-A3EE-2BF55B2A6CF2}</ProjectGuid>
+    <ProjectGuid>{968C214D-C194-449A-8EDD-732BFC705796}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelloAmap</RootNamespace>
-    <AssemblyName>HelloAmap</AssemblyName>
+    <RootNamespace>ReGeoCodeMyPosition</RootNamespace>
+    <AssemblyName>ReGeoCodeMyPosition</AssemblyName>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>ar-IQ</SupportedCultures>
+    <SupportedCultures>
+    </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>HelloAmap_$(Configuration)_$(Platform).xap</XapFilename>
+    <XapFilename>ReGeoCodeMyPosition_$(Configuration)_$(Platform).xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
-    <SilverlightAppEntry>HelloAmap.App</SilverlightAppEntry>
+    <SilverlightAppEntry>ReGeoCodeMyPosition.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
@@ -114,6 +115,30 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\bktile.data" />
+    <Content Include="Assets\DrawLinePixelShader.cso" />
+    <Content Include="Assets\DrawLineVertexShader.cso" />
+    <Content Include="Assets\DrawPolygonPixelShader.cso" />
+    <Content Include="Assets\DrawPolygonVertexShader.cso" />
+    <Content Include="Assets\ft2.data" />
+    <Content Include="Assets\icn_hv3.data" />
+    <Content Include="Assets\icn_lv3.data" />
+    <Content Include="Assets\InsertPicturePixelShader.cso" />
+    <Content Include="Assets\InsertPictureVertexShader.cso" />
+    <Content Include="Assets\lr.data" />
+    <Content Include="Assets\lt.cso" />
+    <Content Include="Assets\ltc.cso" />
+    <Content Include="Assets\oc.cso" />
+    <Content Include="Assets\ov2.cso" />
+    <Content Include="Assets\ov3.cso" />
+    <Content Include="Assets\ra.data" />
+    <Content Include="Assets\rd.data" />
+    <Content Include="Assets\style_lv3.data" />
+    <Content Include="Assets\style_slv3.data" />
+    <Content Include="Assets\v3t.cso" />
+    <Content Include="Assets\vvt.cso" />
+    <Content Include="Assets\wk.data" />
+    <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
@@ -139,13 +164,27 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="LibMap.dll" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\AppResources.ar-IQ.resx" />
     <EmbeddedResource Include="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AMapSDKV2Comp">
+      <HintPath>..\packages\AMap3D.WindowsPhone.2.2.1.1\lib\AMapSDKV2Comp.winmd</HintPath>
+    </Reference>
+    <Reference Include="Com.AMap.Api.Maps">
+      <HintPath>..\packages\AMap3D.WindowsPhone.2.2.1.1\lib\Com.AMap.Api.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Com.AMap.Api.Services">
+      <HintPath>..\packages\AMap3D.WindowsPhone.2.2.1.1\lib\Com.AMap.Api.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>..\packages\AMap3D.WindowsPhone.2.2.1.1\lib\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
