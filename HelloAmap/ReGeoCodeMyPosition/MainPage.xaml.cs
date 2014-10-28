@@ -26,6 +26,7 @@ namespace ReGeoCodeMyPosition
             amap.Tap += amap_Tap;
         }
 
+
         private void amap_Tap(object sender, GestureEventArgs e)
         {
             latLng = amap.GetProjection().FromScreenLocation(e.GetPosition(amap));
@@ -45,34 +46,25 @@ namespace ReGeoCodeMyPosition
 
         private async Task GeoCodeToAddress(double lon, double lat)
         {
-            AMapReGeoCodeResult rcc = await AMapReGeoCodeSearch.GeoCodeToAddress(lon, lat, 500, "", Extensions.All);
+            AMapReGeoCodeResult result = await AMapReGeoCodeSearch.GeoCodeToAddress(lon, lat, 500, "", Extensions.All);
 
-            if (rcc.Erro == null && rcc.ReGeoCode != null)
+            if (result.Erro == null && result.ReGeoCode != null)
             {
-                AMapReGeoCode regeocode = rcc.ReGeoCode;
+                AMapReGeoCode regeocode = result.ReGeoCode;
 
-                List<AMapPOI> pois = regeocode.Pois.ToList();
-                //POI信息点
-                foreach (AMapPOI poi in pois)
-                {
-                    marker = amap.AddMarker(new AMapMarkerOptions
-                    {
-                        Position = new LatLng(poi.Location.Lat, poi.Location.Lon),
-                        Title = poi.Name,
-                        Snippet = poi.Address,
-                    });
-                }
-
-                AMapAddressComponent addressComponent = regeocode.Address_component;
-                AMapStreetNumber streetNumber = addressComponent.Stree_number;
-
+                var poiFirst = regeocode.Pois.ToList().First();
 
                 marker = amap.AddMarker(new AMapMarkerOptions
                 {
-                    Position = new LatLng(streetNumber.Location.Lat, streetNumber.Location.Lon), //amap.Center,//
-                    Title = addressComponent.Province,
-                    Snippet = regeocode.Formatted_address,
+                    Position = new LatLng(poiFirst.Location.Lat, poiFirst.Location.Lon),
+                    Title = poiFirst.Name,
+                    Snippet = poiFirst.Address,
                 });
+
+
+                string locationHumanReadable = poiFirst.Name;
+                var info = new ComeOnEatChicken(locationHumanReadable);
+                marker.ShowInfoWindow(info);
 
 
                 amap.MoveCamera(
@@ -81,7 +73,7 @@ namespace ReGeoCodeMyPosition
             }
             else
             {
-                MessageBox.Show(rcc.Erro.Message);
+                MessageBox.Show(result.Erro.Message);
             }
         }
     }
