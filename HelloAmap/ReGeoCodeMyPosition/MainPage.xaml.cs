@@ -66,10 +66,6 @@ namespace ReGeoCodeMyPosition
                 var info = new ComeOnEatChicken(locationHumanReadable);
                 marker.ShowInfoWindow(info);
 
-
-                amap.MoveCamera(
-                    CameraUpdateFactory.NewLatLngZoom(
-                        new LatLng(Convert.ToDouble(txtLon.Text), Convert.ToDouble(txtLat.Text)), 12));
             }
             else
             {
