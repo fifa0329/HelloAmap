@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson4ReGeoCodeMyPosition"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson5NearbyPOI", "Lesson5\Lesson5NearbyPOI.csproj", "{0E1B85C4-04CB-4D96-957C-0D324337E0A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6", "Lesson6\Lesson6.csproj", "{0D75931B-5FD2-43AE-B8C1-51AFB0FF22B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6WalkTo", "Lesson6\Lesson6WalkTo.csproj", "{0D75931B-5FD2-43AE-B8C1-51AFB0FF22B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

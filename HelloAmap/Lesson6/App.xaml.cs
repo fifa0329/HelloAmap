@@ -4,6 +4,8 @@ using System.Resources;
 using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Navigation;
+using Com.AMap.Api.Maps;
+using Com.AMap.Api.Services;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Lesson6.Resources;
@@ -54,7 +56,10 @@ namespace Lesson6
                 // and consume battery power when the user is not using the phone.
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
+            string newKey = "890572ffc297cf2e0278bbdba3aa8bb7";
 
+            AMapConfig.Key = newKey;//地图显示key
+            AMapSearchConfig.Key = newKey;
         }
 
         // Code to execute when the application is launching (eg, from Start)

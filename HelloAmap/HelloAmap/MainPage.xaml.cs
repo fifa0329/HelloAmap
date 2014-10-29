@@ -1,4 +1,5 @@
-﻿using Microsoft.Phone.Controls;
+﻿using Com.AMap.Api.Maps;
+using Microsoft.Phone.Controls;
 
 namespace HelloAmap
 {
@@ -10,7 +11,7 @@ namespace HelloAmap
             InitializeComponent();
 
             // Sample code to localize the ApplicationBar
-            //ContentPanel.Children.Add(new AMap());
+            ContentPanel.Children.Add(new AMap());
         }
 
 

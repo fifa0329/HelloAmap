@@ -105,6 +105,7 @@ namespace Lesson3
             mylocation.Start();
             //触发位置改变事件
             mylocation.PositionChanged += mylocation_PositionChanged;
+
         }
     }
 }
